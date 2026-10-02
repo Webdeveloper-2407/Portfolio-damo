@@ -1,0 +1,26 @@
+.links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.links button {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: #f4f7fb;
+  background: rgba(7, 16, 24, 0.65);
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.links button:hover {
+  transform: translateY(-2px);
+  color: var(--gold);
+  border-color: rgba(245, 204, 91, 0.55);
+  background: rgba(245, 204, 91, 0.08);
+}

@@ -1,0 +1,80 @@
+.services {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(33, 145, 231, 0.11), transparent 28%),
+    linear-gradient(180deg, rgba(4, 12, 18, 0.12), rgba(2, 8, 13, 0.54));
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 50px;
+}
+
+.card {
+  min-height: 205px;
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 17px;
+  background: linear-gradient(180deg, rgba(9, 21, 30, 0.86), rgba(4, 10, 16, 0.78));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04), 0 20px 45px rgba(0, 0, 0, 0.16);
+  transition: transform 0.22s ease, border-color 0.22s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(245, 204, 91, 0.4);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  color: #ffe2a0;
+  background: radial-gradient(circle at 50% 50%, rgba(246, 191, 64, 0.31), rgba(246, 191, 64, 0.06) 58%, transparent 72%);
+  filter: drop-shadow(0 0 18px rgba(246, 191, 64, 0.18));
+}
+
+.card h3 {
+  margin: 0 0 7px;
+  color: #fff;
+  font-size: 1.12rem;
+  letter-spacing: -0.015em;
+}
+
+.card p {
+  max-width: 240px;
+  margin: 0;
+  color: #d0d8df;
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 920px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .grid {
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
+
+  .card {
+    min-height: 175px;
+  }
+}
